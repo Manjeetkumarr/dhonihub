@@ -9,17 +9,17 @@ This web project showcases various content pages, including photos, videos, memo
 
 The repository includes:
 
-.vscode/
-coverdrive.html
-helicoptershot.html
-index.html
-login.html
-photos.html
-pullshot.html
-stumping.html
-sweepshot.html
-style.css
-videos/
+.vscode/ \n
+coverdrive.html \n
+helicoptershot.html \n
+index.html \n
+login.html \n
+photos.html \n
+pullshot.html \n
+stumping.html \n
+sweepshot.html \n
+style.css \n
+videos/ \n
 
 
 ## 🧠 Features
