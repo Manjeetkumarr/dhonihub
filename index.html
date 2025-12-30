@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dhonihub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="intro-screen">
+        <div class="intro-wrap">
+            <h1 class="intro-logo">Dhoni<span>hub</span></h1>
+            <h1 class="intro-sub">community</h1>
+        </div>
+    </div>
+
+
+    <header class="navbar">
+        <span class="menu" id="menuOpen">☰</span>
+
+        <div class="center">
+            <a href="index.html" class="logo-link">
+               <span class="logo">Dhoni<span>hub</span></span>
+            </a>
+        </div>
+
+        <div class="right">
+            <a href="login.html" class="profile-link">
+               <img src="photos/msd.jpg" class="profile-pic">
+            </a>
+        </div>
+    </header>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar" id="sidebar">
+        <span class="close" id="menuClose">✕</span>
+    
+        <a href="index.html">Home</a>
+        <a href="photos.html">Photos</a>
+        <a href="helicoptershot.html">Helicopter Shot</a>
+        <a href="stumping.html">Stumping</a>
+        <a href="pullshot.html">Pull Shot</a>
+        <a href="coverdrive.html">Cover Drive</a>
+        <a href="sweepshot.html">Sweep Shot</a>
+    </div>
+
+    <!-- OVERLAY -->
+    <div 
+        class="sidebar-overlay" id="sidebarOverlay">
+    </div>
+
+    <!-- CATEGORY BAR -->
+    <nav class="categories">
+
+        <a href="photos.html">Photos</a>
+        <a href="helicoptershot.html">Helicopter Shot</a>
+        <a href="stumping.html">Stumping</a>
+        <a href="pullshot.html">Pull Shot</a>
+        <a href="coverdrive.html">Cover Drive</a>
+        <a href="sweepshot.html">Sweep Shot</a>
+    </nav>
+
+    <!-- VIDEO SECTION -->
+    <main class="content">
+        <video src="videos/home/ho15.mp4" autoplay muted loop onclick="openFullscreen(this)"></video>
+        <video src="videos/home/ho17.mp4" autoplay muted loop onclick="openFullscreen(this)"></video>
+        <video src="videos/home/ho5.mp4" autoplay muted loop onclick="openFullscreen(this)"></video>
+        <video src="videos/home/ho11.mp4" autoplay muted loop onclick="openFullscreen(this)"></video>
+        <video src="videos/home/ho12.mp4" autoplay muted loop onclick="openFullscreen(this)"></video>
+        <video src="videos/home/ho16.mp4" autoplay muted loop onclick="openFullscreen(this)"></video>
+        <video src="videos/home/ho14.mp4" autoplay muted loop onclick="openFullscreen(this)"></video>
+        <video src="videos/home/ho1.mp4" autoplay muted loop onclick="openFullscreen(this)"></video>
+        <video src="videos/home/ho2.mp4" autoplay muted loop onclick="openFullscreen(this)"></video>
+        <video src="videos/home/ho3.mp4" autoplay muted loop onclick="openFullscreen(this)"></video>
+        <video src="videos/home/ho4.mp4" autoplay muted loop onclick="openFullscreen(this)"></video>
+        <video src="videos/home/ho9.mp4" autoplay muted loop onclick="openFullscreen(this)"></video>
+        <video src="videos/home/ho7.mp4" autoplay muted loop onclick="openFullscreen(this)"></video>
+        <video src="videos/home/ho10.mp4" autoplay muted loop onclick="openFullscreen(this)"></video>
+        <video src="videos/home/ho13.mp4" autoplay muted loop onclick="openFullscreen(this)"></video>
+        <video src="videos/home/ho8.mp4" autoplay muted loop onclick="openFullscreen(this)"></video>
+        <video src="videos/home/ho6.mp4" autoplay muted loop onclick="openFullscreen(this)"></video>
+    </main>
+
+
+<script>
+
+    function openFullscreen(el) {
+        if (el.requestFullscreen) {
+            el.requestFullscreen();
+        } else if (el.webkitRequestFullscreen) {
+            el.webkitRequestFullscreen();
+        } else if (el.msRequestFullscreen) {
+            el.msRequestFullscreen();
+        }
+    }
+    const menuOpen = document.getElementById("menuOpen");
+    const menuClose = document.getElementById("menuClose");
+    const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("sidebarOverlay");
+
+    menuOpen.onclick = () => {
+        sidebar.classList.add("active");
+        overlay.classList.add("active");
+    };
+
+    menuClose.onclick = () => {
+        sidebar.classList.remove("active");
+        overlay.classList.remove("active");
+    };
+
+    overlay.onclick = () => {
+        sidebar.classList.remove("active");
+        overlay.classList.remove("active");
+    };
+
+    setTimeout(() => {
+        document.getElementById("intro-screen").style.display = "none";
+    }, 4500);
+
+</script>
+
+</body>
+</html>

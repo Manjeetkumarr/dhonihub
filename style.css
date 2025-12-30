@@ -1,0 +1,349 @@
+body {
+    opacity: 10;
+    transition: opacity 0.5s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbar {
+    height: 60px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 20px;
+}
+
+.menu {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    background: orange;
+    color: black;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 3px;
+}
+
+.profile-pic {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;    
+    object-fit: cover;      
+    cursor: pointer;
+}
+
+.profile-link {
+    display: flex;
+    align-items: center;
+}
+
+/* CATEGORY BAR */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 14px;
+    padding: 15px 0;
+    color: gray;
+}
+
+.categories a {
+    cursor: pointer;
+}
+
+/* Videos/Content */
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    gap: 50px;
+
+    padding: 40px;
+}
+
+/* Each video card */
+.content img,
+.content video {
+    width: 95%;
+    height: 300px;          
+    object-fit: cover;      
+    background: black;
+    border-radius: 8px;
+}
+
+
+.logo-link {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* LOGIN / SIGNUP */
+
+.auth-body {
+    background: #111;
+    height: 100vh;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     /* background: black; */
+    height: calc(100vh - 60px);
+}
+
+.auth-box {
+    background: #111;
+    padding: 30px;
+    width: 350px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.auth-box form {
+    display: grid;
+    background: #111;
+    gap: 5px;  
+}
+
+.auth-box h2 {
+    background: #111;
+    margin-bottom: 20px;
+}
+
+    .auth-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #111;
+    border: 1px solid #333;
+    color: white;
+    border-radius: 4px;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+
+    background: orange;
+    border: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.switch-text {
+    margin-top: 15px;
+    background: #111;
+    font-size: 14px;
+    color: gray;
+}
+
+.switch-text span {
+    background: #111;
+    color: orange;
+    cursor: pointer;
+}
+
+/* MENU BUTTON */
+.menu {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100vh;
+    background: #111;
+    padding: 20px;
+    transition: left 0.35s ease;
+    z-index: 1001;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar a {
+    display: block;
+    margin: 13px 0;
+    color: white;
+    background: #111;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.sidebar a:hover {
+    color: orange;
+}
+
+.close {
+    font-size: 22px;
+    cursor: pointer;
+    /* display: block; */
+    margin-bottom: 20px;
+}
+
+/* OVERLAY */
+.sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease;
+    z-index: 1000;
+}
+
+.sidebar-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* INTRO SCREEN */
+#intro-screen {
+    position: fixed;
+    inset: 0;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: screenFade 1s ease forwards;
+    animation-delay: 3.6s;
+}
+
+.intro-wrap {
+    text-align: center;
+}
+
+/* LOGO */
+.intro-logo {
+    font-size: 56px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 3px;
+    animation: cinematicIntro 3.2s ease forwards;
+}
+
+.intro-logo span {
+    background: orange;
+    color: black;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-left: 8px;
+}
+
+/* COMMUNITY TEXT */
+.intro-sub {
+    margin-top: 10px;
+    font-size: 43px;
+    letter-spacing: 10px;
+    color: #bbb;
+    opacity: 0;
+    animation: subFade 1.2s ease forwards;
+    animation-delay: 0s;
+}
+
+/* LOGO ANIMATION */
+@keyframes cinematicIntro {
+    0% {
+        opacity: 0;
+        transform: scale(0.2);
+        filter: blur(20px);
+    }
+    30% {
+        opacity: 1;
+        filter: blur(0);
+    }
+    60% {
+        transform: scale(1.15);
+    }
+    80% {
+        transform: scale(0.98);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* SUBTITLE FADE */
+@keyframes subFade {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* SCREEN FADE OUT */
+@keyframes screenFade {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.stats-box {
+    text-align: left;
+}
+
+.stats-box h2 {
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.stats-section {
+    margin-bottom: 15px;
+}
+
+.stats-section h3 {
+    margin-bottom: 6px;
+    color: orange;
+}
+
+.stats-section ul {
+    padding-left: 18px;
+}
+
+.stats-section li {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
