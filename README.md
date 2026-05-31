@@ -1,4 +1,4 @@
-# 🏏 DhoniHub
+# DhoniHub
 
 Welcome to **DhoniHub** — a fan-made website dedicated to the legendary Indian cricketer **Mahendra Singh Dhoni (MS Dhoni)**!  
 This web project showcases various content pages, including photos, videos, memorable cricket shots, and Dhoni’s iconic moments.
@@ -6,10 +6,10 @@ This web project showcases various content pages, including photos, videos, memo
 ---
 ## Live link - https://manjeetkumarr.github.io/dhonihub/
 
-## 📁 Project Structure
+
+## Project Structure
 
 The repository includes:
-
 - .vscode/
 - coverdrive.html
 - helicoptershot.html
@@ -22,48 +22,54 @@ The repository includes:
 - style.css
 - videos/
 
+## Features
 
-## 🧠 Features
-
-🎯 **Home Page (`index.html`)**  
+- **Home Page (`index.html`)**  
 A landing page that welcomes visitors and links to different Dhoni content.
 
-📸 **Photos Gallery (`photos.html`)**  
+- **Photos Gallery (`photos.html`)**  
 A collection of Dhoni’s best moments in photos.
 
-📹 **Videos Folder (`videos/`)**  
+- **Videos Folder (`videos/`)**  
 Highlights and iconic cricket clips featuring Dhoni.
 
-🏏 **Special Pages**  
-- `helicoptershot.html` — Dhoni’s famous helicopter shot  
-- `pullshot.html` — Classic pull shot pictures  
-- `stumping.html` — Dhoni’s quick stumpings  
-- `sweepshot.html` — Beautiful sweep shots
+- **Special Pages**  
+   - `helicoptershot.html` — Dhoni’s famous helicopter shot  
+   - `pullshot.html` — Classic pull shot pictures  
+   - `stumping.html` — Dhoni’s quick stumpings  
+   - `sweepshot.html` — Beautiful sweep shots
 
-🎨 **Custom Styling**  
+- **Custom Styling**  
 All pages use the `style.css` file for visual design.
 
 
-## 🚀 How to Use
+## How to Use
 
-1. Clone the repository:
+Clone the repository:
    ```sh
    git clone https://github.com/Manjeetkumarr/dhonihub.git
+   ```
 Open index.html in any web browser.
 
 Explore Dhoni’s photos, videos, and cricket shots!
 
-💻 Technologies
-✔️ HTML
-✔️ CSS
+## Technologies
+- HTML <br>
+- CSS
 
-📌 Notes
-💡 This project is static and runs purely on frontend — no backend required.
-💾 All content is stored locally in the repository.
+## Note - 
+- This project is static and runs purely on frontend — no backend required.
+- All content is stored locally in the repository.
 
-🙌 Credits
-Designed and developed by Manjeet Kumar.
-Perfect for Dhoni fans and anyone learning web development!
+## About the Developer
+Manjeet Kumar
 
-⭐ Support
-If you like this project, give it a ⭐ on GitHub!
+B.Tech Cyber Security Engineering Student
+
+Government Engineering College Ajmer
+
+Bikaner Technical University
+
+---
+### If you like this project, give it a ⭐ on GitHub! <br>
+### For suggestions, improvements, or collaboration, feel free to reach out.
